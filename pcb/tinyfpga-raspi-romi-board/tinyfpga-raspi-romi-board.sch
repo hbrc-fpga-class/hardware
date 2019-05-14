@@ -356,9 +356,9 @@ $EndComp
 Wire Wire Line
 	4600 4800 4600 4650
 Wire Wire Line
-	4600 4650 4850 4650
+	4600 4650 4800 4650
 Wire Wire Line
-	5150 4650 5350 4650
+	5150 4650 5200 4650
 $Comp
 L power:+BATT #PWR?
 U 1 1 5CD9FFB4
@@ -437,4 +437,228 @@ Wire Wire Line
 Connection ~ 4300 4750
 Wire Wire Line
 	4300 4750 4300 4600
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 5CDA7574
+P 1500 6850
+F 0 "J?" H 1600 6950 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1950 6850 50  0000 C CNN
+F 2 "" H 1500 6850 50  0001 C CNN
+F 3 "~" H 1500 6850 50  0001 C CNN
+	1    1500 6850
+	-1   0    0    -1  
+$EndComp
+Text Label 2250 6750 2    50   ~ 0
+ROMI_ENC_LA
+Text Label 2250 7300 2    50   ~ 0
+ROMI_ENC_RA
+Text Label 2250 6850 2    50   ~ 0
+ROMI_ENC_LB
+Text Label 2250 7400 2    50   ~ 0
+ROMI_ENC_RB
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 5CDAB5A4
+P 1500 7400
+F 0 "J?" H 1550 7500 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 1550 7400 50  0000 L CNN
+F 2 "" H 1500 7400 50  0001 C CNN
+F 3 "~" H 1500 7400 50  0001 C CNN
+	1    1500 7400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6750 2250 6750
+Wire Wire Line
+	2250 6850 1700 6850
+Wire Wire Line
+	2250 7300 1700 7300
+Wire Wire Line
+	2250 7400 1700 7400
+Wire Wire Line
+	1700 6950 1800 6950
+Wire Wire Line
+	1700 7500 1800 7500
+$Comp
+L power:GND #PWR?
+U 1 1 5CDB8BE2
+P 1800 6950
+F 0 "#PWR?" H 1800 6700 50  0001 C CNN
+F 1 "GND" H 1805 6777 50  0000 C CNN
+F 2 "" H 1800 6950 50  0001 C CNN
+F 3 "" H 1800 6950 50  0001 C CNN
+	1    1800 6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CDB91B9
+P 1800 7500
+F 0 "#PWR?" H 1800 7250 50  0001 C CNN
+F 1 "GND" H 1805 7327 50  0000 C CNN
+F 2 "" H 1800 7500 50  0001 C CNN
+F 3 "" H 1800 7500 50  0001 C CNN
+	1    1800 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3650 2300 3750
+Wire Wire Line
+	2300 3750 2350 3750
+Wire Wire Line
+	3000 3750 3000 3650
+Wire Wire Line
+	2400 3650 2400 3750
+Connection ~ 2400 3750
+Wire Wire Line
+	2400 3750 2500 3750
+Connection ~ 2500 3750
+Wire Wire Line
+	2500 3750 2600 3750
+Wire Wire Line
+	2600 3750 2600 3650
+Connection ~ 2600 3750
+Wire Wire Line
+	2500 3650 2500 3750
+Wire Wire Line
+	2700 3650 2700 3750
+Wire Wire Line
+	2600 3750 2700 3750
+Connection ~ 2700 3750
+Wire Wire Line
+	2700 3750 2800 3750
+Wire Wire Line
+	2800 3650 2800 3750
+Connection ~ 2800 3750
+Wire Wire Line
+	2800 3750 2900 3750
+Wire Wire Line
+	2900 3650 2900 3750
+Connection ~ 2900 3750
+Wire Wire Line
+	2900 3750 3000 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5CDD9BBB
+P 2350 3750
+F 0 "#PWR?" H 2350 3500 50  0001 C CNN
+F 1 "GND" H 2355 3577 50  0000 C CNN
+F 2 "" H 2350 3750 50  0001 C CNN
+F 3 "" H 2350 3750 50  0001 C CNN
+	1    2350 3750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2350 3750
+Wire Wire Line
+	2350 3750 2400 3750
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 5CDDF928
+P 1500 6150
+F 0 "J?" H 1392 6535 50  0000 C CNN
+F 1 "Conn_01x06_Female" H 1900 6150 50  0000 C CNN
+F 2 "" H 1500 6150 50  0001 C CNN
+F 3 "~" H 1500 6150 50  0001 C CNN
+	1    1500 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5CDE35EF
+P 1500 5100
+F 0 "J?" H 1550 5417 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1550 5326 50  0000 C CNN
+F 2 "" H 1500 5100 50  0001 C CNN
+F 3 "~" H 1500 5100 50  0001 C CNN
+	1    1500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5000 1300 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5CDEB28B
+P 1850 5250
+F 0 "#PWR?" H 1850 5000 50  0001 C CNN
+F 1 "GND" H 1855 5077 50  0000 C CNN
+F 2 "" H 1850 5250 50  0001 C CNN
+F 3 "" H 1850 5250 50  0001 C CNN
+	1    1850 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5000 1850 5000
+Wire Wire Line
+	1850 5000 1850 5100
+Wire Wire Line
+	1800 5200 1850 5200
+Connection ~ 1850 5200
+Wire Wire Line
+	1850 5200 1850 5250
+Wire Wire Line
+	1800 5100 1850 5100
+Connection ~ 1850 5100
+Wire Wire Line
+	1850 5100 1850 5200
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CDF3B4A
+P 4950 4200
+F 0 "J?" V 5100 4150 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 5000 3850 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4950 4200 50  0001 C CNN
+F 3 "~" H 4950 4200 50  0001 C CNN
+	1    4950 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 4400 4800 4400
+Wire Wire Line
+	4800 4400 4800 4650
+Connection ~ 4800 4650
+Wire Wire Line
+	4800 4650 4850 4650
+Wire Wire Line
+	5050 4400 5200 4400
+Wire Wire Line
+	5200 4400 5200 4650
+Connection ~ 5200 4650
+Wire Wire Line
+	5200 4650 5350 4650
+Text Notes 4450 3950 0    50   ~ 0
+Jump the fuse. You feelin' lucky, punk?
+Text Label 2150 5950 2    50   ~ 0
+ROMI_~SLPL
+Text Label 2150 6250 2    50   ~ 0
+ROMI_~SLPR
+Text Label 2150 6050 2    50   ~ 0
+ROMI_DIRL
+Text Label 900  5000 0    50   ~ 0
+ROMI_VSW
+Text Label 900  5100 0    50   ~ 0
+ROMI_VSW
+Text Label 900  5200 0    50   ~ 0
+ROMI_VSW
+Wire Wire Line
+	900  5100 1300 5100
+Wire Wire Line
+	900  5200 1300 5200
+Text Label 2150 6150 2    50   ~ 0
+ROMI_PWML
+Text Label 2150 6450 2    50   ~ 0
+ROMI_PWMR
+Text Label 2150 6350 2    50   ~ 0
+ROMI_DIRR
+Wire Wire Line
+	1700 5950 2150 5950
+Wire Wire Line
+	2150 6050 1700 6050
+Wire Wire Line
+	1700 6150 2150 6150
+Wire Wire Line
+	2150 6250 1700 6250
+Wire Wire Line
+	1700 6350 2150 6350
+Wire Wire Line
+	2150 6450 1700 6450
 $EndSCHEMATC
