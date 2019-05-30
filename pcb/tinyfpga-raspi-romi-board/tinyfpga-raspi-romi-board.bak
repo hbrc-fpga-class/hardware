@@ -17,34 +17,34 @@ $EndDescr
 $Comp
 L Connector:Raspberry_Pi_2_3 J3
 U 1 1 5CCFE93E
-P 1900 2050
-F 0 "J3" H 1250 3300 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2600 800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 1900 2050 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 1900 2050 50  0001 C CNN
-	1    1900 2050
+P 2000 2350
+F 0 "J3" H 1350 3600 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2700 1100 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2000 2350 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2000 2350 50  0001 C CNN
+	1    2000 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x14_Female J1
 U 1 1 5CD8C597
-P 5850 4350
-F 0 "J1" H 5742 3425 50  0000 C CNN
-F 1 "Conn_01x14_Female" H 5742 3516 50  0000 C CNN
-F 2 "" H 5850 4350 50  0001 C CNN
-F 3 "~" H 5850 4350 50  0001 C CNN
-	1    5850 4350
+P 6100 3650
+F 0 "J1" H 6050 4400 50  0000 C CNN
+F 1 "TINYFPGA_J1" H 5850 2850 50  0000 C CNN
+F 2 "" H 6100 3650 50  0001 C CNN
+F 3 "~" H 6100 3650 50  0001 C CNN
+	1    6100 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x14_Female J2
 U 1 1 5CD8D315
-P 6150 4250
-F 0 "J2" H 6042 5035 50  0000 C CNN
-F 1 "Conn_01x14_Female" H 6042 4944 50  0000 C CNN
-F 2 "" H 6150 4250 50  0001 C CNN
-F 3 "~" H 6150 4250 50  0001 C CNN
-	1    6150 4250
+P 6200 3650
+F 0 "J2" H 6150 4400 50  0000 C CNN
+F 1 "TINYFPGA_J2" H 5950 2850 50  0000 C CNN
+F 2 "" H 6200 3650 50  0001 C CNN
+F 3 "~" H 6200 3650 50  0001 C CNN
+	1    6200 3650
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -93,42 +93,40 @@ Wire Wire Line
 	7950 1100 8450 1100
 Wire Wire Line
 	8450 1000 7950 1000
-Text Label 6950 3650 2    50   ~ 0
+Text Label 7000 3050 2    50   ~ 0
 FPGA_5V_IN
 $Comp
 L power:GND #PWR03
 U 1 1 5CD97E36
-P 7050 3750
-F 0 "#PWR03" H 7050 3500 50  0001 C CNN
-F 1 "GND" H 7055 3577 50  0000 C CNN
-F 2 "" H 7050 3750 50  0001 C CNN
-F 3 "" H 7050 3750 50  0001 C CNN
-	1    7050 3750
+P 7100 3150
+F 0 "#PWR03" H 7100 2900 50  0001 C CNN
+F 1 "GND" H 7105 2977 50  0000 C CNN
+F 2 "" H 7100 3150 50  0001 C CNN
+F 3 "" H 7100 3150 50  0001 C CNN
+	1    7100 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 3750 7050 3750
+	6400 3150 7100 3150
 Wire Wire Line
-	6350 3650 7050 3650
+	6400 3050 7100 3050
 Wire Wire Line
-	6350 3850 6950 3850
+	6400 3250 7000 3250
 $Comp
 L power:GND #PWR02
 U 1 1 5CD9C3DF
-P 5300 3750
-F 0 "#PWR02" H 5300 3500 50  0001 C CNN
-F 1 "GND" H 5305 3577 50  0000 C CNN
-F 2 "" H 5300 3750 50  0001 C CNN
-F 3 "" H 5300 3750 50  0001 C CNN
-	1    5300 3750
+P 5350 3050
+F 0 "#PWR02" H 5350 2800 50  0001 C CNN
+F 1 "GND" H 5355 2877 50  0000 C CNN
+F 2 "" H 5350 3050 50  0001 C CNN
+F 3 "" H 5350 3050 50  0001 C CNN
+	1    5350 3050
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 3750 5300 3750
-Text Label 7900 1750 0    50   ~ 0
+Text Label 7850 1750 0    50   ~ 0
 FPGA_3.3V_OUT
 Wire Wire Line
-	8450 1750 7900 1750
+	8450 1750 7850 1750
 $Comp
 L custom:OKR-T_3-W12-C A1
 U 1 1 5CD90422
@@ -280,8 +278,6 @@ F 3 "" H 3950 7200 50  0001 C CNN
 	1    3950 7200
 	-1   0    0    -1  
 $EndComp
-Text Notes 6700 6450 0    50   ~ 0
-TRIM resistor of 268\nohms sets VOUT to 5V
 Wire Wire Line
 	3950 7100 3950 7150
 Wire Wire Line
@@ -388,65 +384,65 @@ F 3 "" H 10450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 3350 1500 3450
+	1600 3650 1600 3750
 Wire Wire Line
-	1500 3450 1550 3450
+	1600 3750 1650 3750
 Wire Wire Line
-	2200 3450 2200 3350
+	2300 3750 2300 3650
 Wire Wire Line
-	1600 3350 1600 3450
-Connection ~ 1600 3450
+	1700 3650 1700 3750
+Connection ~ 1700 3750
 Wire Wire Line
-	1600 3450 1700 3450
-Connection ~ 1700 3450
+	1700 3750 1800 3750
+Connection ~ 1800 3750
 Wire Wire Line
-	1700 3450 1800 3450
+	1800 3750 1900 3750
 Wire Wire Line
-	1800 3450 1800 3350
-Connection ~ 1800 3450
+	1900 3750 1900 3650
+Connection ~ 1900 3750
 Wire Wire Line
-	1700 3350 1700 3450
+	1800 3650 1800 3750
 Wire Wire Line
-	1900 3350 1900 3450
+	2000 3650 2000 3750
 Wire Wire Line
-	1800 3450 1900 3450
-Connection ~ 1900 3450
+	1900 3750 2000 3750
+Connection ~ 2000 3750
 Wire Wire Line
-	1900 3450 2000 3450
+	2000 3750 2100 3750
 Wire Wire Line
-	2000 3350 2000 3450
-Connection ~ 2000 3450
+	2100 3650 2100 3750
+Connection ~ 2100 3750
 Wire Wire Line
-	2000 3450 2100 3450
+	2100 3750 2200 3750
 Wire Wire Line
-	2100 3350 2100 3450
-Connection ~ 2100 3450
+	2200 3650 2200 3750
+Connection ~ 2200 3750
 Wire Wire Line
-	2100 3450 2200 3450
+	2200 3750 2300 3750
 $Comp
 L power:GND #PWR08
 U 1 1 5CDD9BBB
-P 1550 3450
-F 0 "#PWR08" H 1550 3200 50  0001 C CNN
-F 1 "GND" H 1555 3277 50  0000 C CNN
-F 2 "" H 1550 3450 50  0001 C CNN
-F 3 "" H 1550 3450 50  0001 C CNN
-	1    1550 3450
+P 1650 3750
+F 0 "#PWR08" H 1650 3500 50  0001 C CNN
+F 1 "GND" H 1655 3577 50  0000 C CNN
+F 2 "" H 1650 3750 50  0001 C CNN
+F 3 "" H 1650 3750 50  0001 C CNN
+	1    1650 3750
 	-1   0    0    -1  
 $EndComp
-Connection ~ 1550 3450
+Connection ~ 1650 3750
 Wire Wire Line
-	1550 3450 1600 3450
+	1650 3750 1700 3750
 $Comp
-L Connector:Conn_01x02_Female J8
+L Connector:Conn_01x02_Male J8
 U 1 1 5CDF3B4A
-P 4450 5850
-F 0 "J8" V 4600 6000 50  0000 L CNN
-F 1 "FUSE_JUMP" V 4500 5650 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4450 5850 50  0001 C CNN
-F 3 "~" H 4450 5850 50  0001 C CNN
-	1    4450 5850
-	0    -1   -1   0   
+P 4550 5850
+F 0 "J8" V 4550 5900 50  0000 L CNN
+F 1 "FUSE_JUMP" V 4650 5900 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4550 5850 50  0001 C CNN
+F 3 "~" H 4550 5850 50  0001 C CNN
+	1    4550 5850
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4450 6050 4300 6050
@@ -460,8 +456,8 @@ Wire Wire Line
 Wire Wire Line
 	4700 6050 4700 6250
 Connection ~ 4700 6250
-Text Notes 6400 6200 0    50   ~ 0
-\nJ8 can be used to connect an external fuse or bypass fusing entirely.
+Text Notes 2600 5650 0    50   ~ 0
+The Murata  OKR-T/3 \nJ8 can be used to connect an external fuse or bypass fusing entirely.\n\nTRIM resistor of 268 ohms sets VOUT to 5V
 Text Label 10800 1250 2    50   ~ 0
 ROMI_~SLPL
 Text Label 10800 1550 2    50   ~ 0
@@ -524,14 +520,14 @@ Wire Wire Line
 Connection ~ 4950 1650
 Wire Wire Line
 	4950 1650 5250 1650
-Text Label 3150 1150 2    50   ~ 0
+Text Label 3250 1450 2    50   ~ 0
 RPI_ID_SD
-Text Label 3150 1250 2    50   ~ 0
+Text Label 3250 1550 2    50   ~ 0
 RPI_ID_SC
 Wire Wire Line
-	2700 1150 3150 1150
+	2800 1450 3250 1450
 Wire Wire Line
-	2700 1250 3150 1250
+	2800 1550 3250 1550
 Wire Wire Line
 	4750 2200 4900 2200
 $Comp
@@ -546,15 +542,15 @@ F 3 "" H 4900 2450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J6
+L Connector:Conn_01x02_Male J6
 U 1 1 5CD9A9C4
 P 5150 2300
-F 0 "J6" H 5178 2276 50  0000 L CNN
-F 1 "WP_JUMP" H 5178 2185 50  0000 L CNN
+F 0 "J6" H 5050 2300 50  0000 L CNN
+F 1 "WP_JUMP" H 4800 2200 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5150 2300 50  0001 C CNN
 F 3 "~" H 5150 2300 50  0001 C CNN
 	1    5150 2300
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4900 2300 4900 2200
@@ -563,7 +559,7 @@ Wire Wire Line
 	4900 2200 5850 2200
 Wire Wire Line
 	4900 2400 4900 2450
-Text Label 6950 3850 2    50   ~ 0
+Text Label 7000 3250 2    50   ~ 0
 FPGA_3.3V_OUT
 $Comp
 L power:+5V #PWR021
@@ -581,11 +577,9 @@ Wire Wire Line
 Wire Wire Line
 	9650 4550 9650 4500
 Wire Wire Line
-	9600 4650 10050 4650
-Text Label 10050 4650 2    50   ~ 0
+	9600 4650 10800 4650
+Text Label 10800 4650 2    50   ~ 0
 SONL_TRIG
-Text Label 10050 4750 2    50   ~ 0
-SONL_ECHO
 $Comp
 L power:GND #PWR023
 U 1 1 5CEA4533
@@ -616,9 +610,9 @@ Wire Wire Line
 	9600 5550 9650 5550
 Wire Wire Line
 	9650 5550 9650 5500
-Text Label 10050 5650 2    50   ~ 0
+Text Label 10900 5650 2    50   ~ 0
 SONR_TRIG
-Text Label 10050 5750 2    50   ~ 0
+Text Label 10900 5750 2    50   ~ 0
 SONR_ECHO
 $Comp
 L power:GND #PWR024
@@ -656,89 +650,83 @@ Connection ~ 5100 7150
 $Comp
 L Device:R_US R9
 U 1 1 5CEC0FC7
-P 10550 4950
-F 0 "R9" H 10482 4904 50  0000 R CNN
-F 1 "3.9k" H 10482 4995 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10590 4940 50  0001 C CNN
-F 3 "~" H 10550 4950 50  0001 C CNN
-	1    10550 4950
+P 10350 4950
+F 0 "R9" H 10282 4904 50  0000 R CNN
+F 1 "3.9k" H 10282 4995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10390 4940 50  0001 C CNN
+F 3 "~" H 10350 4950 50  0001 C CNN
+	1    10350 4950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10550 4800 10550 4750
-Connection ~ 10550 4750
+	10350 4800 10350 4750
+Connection ~ 10350 4750
 $Comp
 L power:GND #PWR025
 U 1 1 5CF00C5B
-P 10550 5150
-F 0 "#PWR025" H 10550 4900 50  0001 C CNN
-F 1 "GND" H 10555 4977 50  0000 C CNN
-F 2 "" H 10550 5150 50  0001 C CNN
-F 3 "" H 10550 5150 50  0001 C CNN
-	1    10550 5150
+P 10350 5150
+F 0 "#PWR025" H 10350 4900 50  0001 C CNN
+F 1 "GND" H 10355 4977 50  0000 C CNN
+F 2 "" H 10350 5150 50  0001 C CNN
+F 3 "" H 10350 5150 50  0001 C CNN
+	1    10350 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10550 5150 10550 5100
-Text Label 10900 4750 2    50   ~ 0
-SONL_ECHO_DIV
+	10350 5150 10350 5100
 Wire Wire Line
-	10550 4750 10900 4750
+	10350 4750 10800 4750
 $Comp
 L Device:R_US R8
 U 1 1 5CF16656
-P 10300 5950
-F 0 "R8" H 10232 5904 50  0000 R CNN
-F 1 "1k" H 10232 5995 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10340 5940 50  0001 C CNN
-F 3 "~" H 10300 5950 50  0001 C CNN
-	1    10300 5950
-	-1   0    0    1   
+P 10150 5750
+F 0 "R8" V 10200 5950 50  0000 R CNN
+F 1 "1k" V 10100 5950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10190 5740 50  0001 C CNN
+F 3 "~" H 10150 5750 50  0001 C CNN
+	1    10150 5750
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R6
 U 1 1 5CF1665C
-P 10050 5950
-F 0 "R6" H 9982 5904 50  0000 R CNN
-F 1 "1k" H 9982 5995 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10090 5940 50  0001 C CNN
-F 3 "~" H 10050 5950 50  0001 C CNN
-	1    10050 5950
-	-1   0    0    1   
+P 9800 5750
+F 0 "R6" V 9750 5650 50  0000 R CNN
+F 1 "1k" V 9850 5650 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 9840 5740 50  0001 C CNN
+F 3 "~" H 9800 5750 50  0001 C CNN
+	1    9800 5750
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R10
 U 1 1 5CF16662
-P 10600 5950
-F 0 "R10" H 10532 5904 50  0000 R CNN
-F 1 "3.9k" H 10532 5995 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10640 5940 50  0001 C CNN
-F 3 "~" H 10600 5950 50  0001 C CNN
-	1    10600 5950
+P 10350 5950
+F 0 "R10" H 10282 5904 50  0000 R CNN
+F 1 "3.9k" H 10282 5995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10390 5940 50  0001 C CNN
+F 3 "~" H 10350 5950 50  0001 C CNN
+	1    10350 5950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10600 5800 10600 5750
-Connection ~ 10600 5750
+	10350 5800 10350 5750
+Connection ~ 10350 5750
 $Comp
 L power:GND #PWR026
 U 1 1 5CF1666C
-P 10600 6150
-F 0 "#PWR026" H 10600 5900 50  0001 C CNN
-F 1 "GND" H 10605 5977 50  0000 C CNN
-F 2 "" H 10600 6150 50  0001 C CNN
-F 3 "" H 10600 6150 50  0001 C CNN
-	1    10600 6150
+P 10350 6150
+F 0 "#PWR026" H 10350 5900 50  0001 C CNN
+F 1 "GND" H 10355 5977 50  0000 C CNN
+F 2 "" H 10350 6150 50  0001 C CNN
+F 3 "" H 10350 6150 50  0001 C CNN
+	1    10350 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 6150 10600 6100
-Text Label 10900 5750 2    50   ~ 0
-SONR_ECHO_DIV
+	10350 6150 10350 6100
 Wire Wire Line
-	10600 5750 10900 5750
-Wire Wire Line
-	9600 4750 10050 4750
+	10350 5750 10900 5750
 $Comp
 L Connector:Conn_01x04_Female J12
 U 1 1 5CF4EEF3
@@ -753,12 +741,12 @@ $EndComp
 $Comp
 L power:+5V #PWR01
 U 1 1 5CF4F72E
-P 7050 3650
-F 0 "#PWR01" H 7050 3500 50  0001 C CNN
-F 1 "+5V" H 7065 3823 50  0000 C CNN
-F 2 "" H 7050 3650 50  0001 C CNN
-F 3 "" H 7050 3650 50  0001 C CNN
-	1    7050 3650
+P 7100 3050
+F 0 "#PWR01" H 7100 2900 50  0001 C CNN
+F 1 "+5V" H 7115 3223 50  0000 C CNN
+F 2 "" H 7100 3050 50  0001 C CNN
+F 3 "" H 7100 3050 50  0001 C CNN
+	1    7100 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -848,211 +836,142 @@ Wire Wire Line
 	8100 4800 8550 4800
 Text Label 8550 4800 2    50   ~ 0
 QTRR_OUT
-Text Label 5150 5050 0    50   ~ 0
+Text Label 5450 4350 0    50   ~ 0
 QTRL_OUT
-Text Label 5150 4950 0    50   ~ 0
+Text Label 5450 4250 0    50   ~ 0
 QTRL_CTRL
-Text Label 5150 4850 0    50   ~ 0
+Text Label 5450 4150 0    50   ~ 0
 QTRR_OUT
-Text Label 5150 4750 0    50   ~ 0
+Text Label 5450 4050 0    50   ~ 0
 QTRR_CTRL
-Text Label 5150 4350 0    50   ~ 0
+Text Label 5450 3650 0    50   ~ 0
 SONL_TRIG
-Text Label 5150 4450 0    50   ~ 0
-SONL_ECHO
-Text Label 5150 4550 0    50   ~ 0
+Text Label 5450 3850 0    50   ~ 0
 SONR_TRIG
-Text Label 5150 4650 0    50   ~ 0
-SONR_ECHO
-Text Label 6900 4650 2    50   ~ 0
+Text Label 7000 4050 2    50   ~ 0
 ROMI_ENC_LA
-Text Label 6900 4850 2    50   ~ 0
+Text Label 7000 4250 2    50   ~ 0
 ROMI_ENC_RA
-Text Label 6900 4750 2    50   ~ 0
+Text Label 7000 4150 2    50   ~ 0
 ROMI_ENC_LB
-Text Label 6900 4950 2    50   ~ 0
+Text Label 7000 4350 2    50   ~ 0
 ROMI_ENC_RB
 Wire Wire Line
-	6350 4650 6900 4650
+	6400 4050 7000 4050
 Wire Wire Line
-	6900 4750 6350 4750
+	7000 4150 6400 4150
 Wire Wire Line
-	6900 4850 6350 4850
+	7000 4250 6400 4250
 Wire Wire Line
-	6900 4950 6350 4950
-Text Label 6800 4050 2    50   ~ 0
+	7000 4350 6400 4350
+Text Label 7000 3450 2    50   ~ 0
 ROMI_~SLPL
-Text Label 6800 4350 2    50   ~ 0
+Text Label 7000 3750 2    50   ~ 0
 ROMI_~SLPR
-Text Label 6800 4150 2    50   ~ 0
+Text Label 7000 3550 2    50   ~ 0
 ROMI_DIRL
-Text Label 6800 4250 2    50   ~ 0
+Text Label 7000 3650 2    50   ~ 0
 ROMI_PWML
-Text Label 6900 4550 2    50   ~ 0
+Text Label 7000 3950 2    50   ~ 0
 ROMI_PWMR
-Text Label 6900 4450 2    50   ~ 0
+Text Label 7000 3850 2    50   ~ 0
 ROMI_DIRR
 Wire Wire Line
-	6350 4050 6800 4050
+	6400 3450 7000 3450
 Wire Wire Line
-	6800 4150 6350 4150
+	7000 3550 6400 3550
 Wire Wire Line
-	6350 4250 6800 4250
+	6400 3650 7000 3650
 Wire Wire Line
-	6800 4350 6350 4350
+	7000 3750 6400 3750
 Wire Wire Line
-	6350 4450 6900 4450
+	6400 3850 7000 3850
 Wire Wire Line
-	6900 4550 6350 4550
+	7000 3950 6400 3950
 Wire Wire Line
-	5150 4350 5650 4350
+	700  1450 1200 1450
 Wire Wire Line
-	5150 4450 5650 4450
-Wire Wire Line
-	5150 4550 5650 4550
-Wire Wire Line
-	5150 4650 5650 4650
-Wire Wire Line
-	5150 4750 5650 4750
-Wire Wire Line
-	5150 4850 5650 4850
-Wire Wire Line
-	5150 4950 5650 4950
-Wire Wire Line
-	5150 5050 5650 5050
-Wire Wire Line
-	600  1150 1100 1150
-Wire Wire Line
-	600  1250 1100 1250
-Text Label 600  1150 0    50   ~ 0
+	700  1550 1200 1550
+Text Label 700  1450 0    50   ~ 0
 RPI_TXD
-Text Label 600  1250 0    50   ~ 0
+Text Label 700  1550 0    50   ~ 0
 RPI_RXD
-Wire Wire Line
-	5150 4150 5650 4150
-Wire Wire Line
-	5150 4250 5650 4250
-Text Label 5150 4150 0    50   ~ 0
+Text Label 5450 3450 0    50   ~ 0
 RPI_TXD
-Text Label 5150 4250 0    50   ~ 0
+Text Label 5450 3550 0    50   ~ 0
 RPI_RXD
-Text Label 9450 2250 2    50   ~ 0
+Text Label 9350 2250 2    50   ~ 0
 FPGA_SS
 Wire Wire Line
-	8950 2250 9450 2250
-Text Label 9450 2150 2    50   ~ 0
+	8950 2250 9350 2250
+Text Label 9350 2150 2    50   ~ 0
 FPGA_SDI
 Wire Wire Line
-	8950 2150 9450 2150
+	8950 2150 9350 2150
 Wire Wire Line
-	8450 2250 7900 2250
-Text Label 7900 2250 0    50   ~ 0
+	8450 2250 7850 2250
+Text Label 7850 2250 0    50   ~ 0
 FPGA_SDO
-Text Label 7900 2150 0    50   ~ 0
+Text Label 7850 2150 0    50   ~ 0
 FPGA_SCK
 Wire Wire Line
-	7900 2150 8450 2150
+	7850 2150 8450 2150
 Wire Wire Line
-	2700 2350 3150 2350
-Text Label 3150 2350 2    50   ~ 0
+	2800 2650 3250 2650
+Text Label 3250 2650 2    50   ~ 0
 FPGA_SDO
-Text Label 3150 2550 2    50   ~ 0
+Text Label 3250 2850 2    50   ~ 0
 FPGA_SCK
 Wire Wire Line
-	3150 2550 2700 2550
-Text Label 3150 2250 2    50   ~ 0
+	3250 2850 2800 2850
+Text Label 3250 2550 2    50   ~ 0
 FPGA_SS
 Wire Wire Line
-	2700 2250 3150 2250
-Text Label 3150 2450 2    50   ~ 0
+	2800 2550 3250 2550
+Text Label 3250 2750 2    50   ~ 0
 FPGA_SDI
 Wire Wire Line
-	2700 2450 3150 2450
-Text Label 9450 2050 2    50   ~ 0
+	2800 2750 3250 2750
+Text Label 9350 2050 2    50   ~ 0
 FPGA_~WP
 Wire Wire Line
-	8950 2050 9450 2050
-Text Label 7900 2050 0    50   ~ 0
+	8950 2050 9350 2050
+Text Label 7850 2050 0    50   ~ 0
 FPGA_~HOLD
 Wire Wire Line
-	7900 2050 8450 2050
-Text Label 3150 1850 2    50   ~ 0
+	7850 2050 8450 2050
+Text Label 3250 2150 2    50   ~ 0
 FPGA_~HOLD
-Text Label 3150 1950 2    50   ~ 0
+Text Label 3250 2250 2    50   ~ 0
 FPGA_~WP
 Wire Wire Line
-	2700 1850 3150 1850
+	2800 2150 3250 2150
 Wire Wire Line
-	3150 1950 2700 1950
+	3250 2250 2800 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5CE8F83E
-P 8400 2350
-F 0 "#PWR?" H 8400 2100 50  0001 C CNN
-F 1 "GND" H 8405 2177 50  0000 C CNN
-F 2 "" H 8400 2350 50  0001 C CNN
-F 3 "" H 8400 2350 50  0001 C CNN
-	1    8400 2350
+P 9450 2350
+F 0 "#PWR?" H 9450 2100 50  0001 C CNN
+F 1 "GND" H 9455 2177 50  0000 C CNN
+F 2 "" H 9450 2350 50  0001 C CNN
+F 3 "" H 9450 2350 50  0001 C CNN
+	1    9450 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR016
-U 1 1 5D0AF809
-P 9050 1750
-F 0 "#PWR016" H 9050 1500 50  0001 C CNN
-F 1 "GND" H 9055 1577 50  0000 C CNN
-F 2 "" H 9050 1750 50  0001 C CNN
-F 3 "" H 9050 1750 50  0001 C CNN
-	1    9050 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 1750 9050 1750
-Wire Wire Line
-	9000 2350 8950 2350
-$Comp
-L power:GND #PWR09
-U 1 1 5CD9D95E
-P 9000 2350
-F 0 "#PWR09" H 9000 2100 50  0001 C CNN
-F 1 "GND" H 9005 2177 50  0000 C CNN
-F 2 "" H 9000 2350 50  0001 C CNN
-F 3 "" H 9000 2350 50  0001 C CNN
-	1    9000 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 2350 8450 2350
 $Comp
 L Device:R_US R7
 U 1 1 5CEC05E9
-P 10300 4950
-F 0 "R7" H 10232 4904 50  0000 R CNN
-F 1 "1k" H 10232 4995 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10340 4940 50  0001 C CNN
-F 3 "~" H 10300 4950 50  0001 C CNN
-	1    10300 4950
-	-1   0    0    1   
+P 10150 4750
+F 0 "R7" V 10200 4950 50  0000 R CNN
+F 1 "1k" V 10100 4950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10190 4740 50  0001 C CNN
+F 3 "~" H 10150 4750 50  0001 C CNN
+	1    10150 4750
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10050 5150 10300 5150
-Wire Wire Line
-	10300 4800 10300 4750
-Wire Wire Line
-	10300 4750 10550 4750
-Wire Wire Line
-	10050 4800 10050 4750
-$Comp
-L Device:R_US R5
-U 1 1 5CEC0A44
-P 10050 4950
-F 0 "R5" H 9982 4904 50  0000 R CNN
-F 1 "1k" H 9982 4995 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 10090 4940 50  0001 C CNN
-F 3 "~" H 10050 4950 50  0001 C CNN
-	1    10050 4950
-	-1   0    0    1   
-$EndComp
+	10300 4750 10350 4750
 $Comp
 L Connector:Conn_01x04_Female J14
 U 1 1 5CE95A60
@@ -1065,25 +984,13 @@ F 3 "~" H 9400 4650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 5800 10300 5750
+	10300 5750 10350 5750
 Wire Wire Line
-	10300 5750 10600 5750
+	9950 5750 10000 5750
 Wire Wire Line
-	10050 5150 10050 5100
+	9650 5750 9600 5750
 Wire Wire Line
-	10300 5150 10300 5100
-Wire Wire Line
-	10050 6100 10050 6150
-Wire Wire Line
-	10050 6150 10300 6150
-Wire Wire Line
-	10300 6150 10300 6100
-Wire Wire Line
-	10050 5800 10050 5750
-Wire Wire Line
-	9600 5750 10050 5750
-Wire Wire Line
-	9600 5650 10050 5650
+	9600 5650 10900 5650
 $Comp
 L Connector:Conn_01x04_Female J15
 U 1 1 5CEAB036
@@ -1211,11 +1118,7 @@ $EndComp
 Wire Notes Line
 	2550 7450 5800 7450
 Wire Notes Line
-	5800 7450 5800 5600
-Wire Notes Line
-	5800 5600 2550 5600
-Wire Notes Line
-	2550 5600 2550 7450
+	5800 5250 2550 5250
 Wire Wire Line
 	3300 6350 3300 6450
 Wire Wire Line
@@ -1231,4 +1134,201 @@ Wire Wire Line
 Connection ~ 3300 6550
 Wire Wire Line
 	3300 6550 3300 6800
+$Comp
+L power:+5V #PWR?
+U 1 1 5D5FEE6C
+P 1850 950
+F 0 "#PWR?" H 1850 800 50  0001 C CNN
+F 1 "+5V" H 1865 1123 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    1850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1050 1800 1000
+Wire Wire Line
+	1800 1000 1850 1000
+Wire Wire Line
+	1900 1000 1900 1050
+Wire Wire Line
+	1850 950  1850 1000
+Connection ~ 1850 1000
+Wire Wire Line
+	1850 1000 1900 1000
+Text Notes 2600 5200 0    50   ~ 0
+5V Regulator Powered by Romi VSW
+Wire Notes Line
+	2550 5250 2550 7450
+Wire Notes Line
+	5800 5250 5800 7450
+Text Label 5450 3150 0    50   ~ 0
+FPGA_221
+Text Label 5450 3250 0    50   ~ 0
+FPGA_224
+Text Label 5450 3350 0    50   ~ 0
+FPGA_3A
+Wire Wire Line
+	5450 3150 5900 3150
+Wire Wire Line
+	5450 3250 5900 3250
+Wire Wire Line
+	5450 3350 5900 3350
+Wire Wire Line
+	5450 3450 5900 3450
+Wire Wire Line
+	5450 3550 5900 3550
+Wire Wire Line
+	5450 3650 5900 3650
+Wire Wire Line
+	5450 3750 5900 3750
+Wire Wire Line
+	5450 3850 5900 3850
+Wire Wire Line
+	5450 3950 5900 3950
+Wire Wire Line
+	5450 4050 5900 4050
+Wire Wire Line
+	5450 4150 5900 4150
+Wire Wire Line
+	5450 4250 5900 4250
+Wire Wire Line
+	5450 4350 5900 4350
+Wire Wire Line
+	5350 3050 5900 3050
+Wire Wire Line
+	6400 3350 7000 3350
+Text Label 7000 3350 2    50   ~ 0
+FPGA_185
+Wire Wire Line
+	7850 2350 8450 2350
+Wire Wire Line
+	8950 2350 9450 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5D1218E6
+P 9450 1750
+F 0 "#PWR?" H 9450 1500 50  0001 C CNN
+F 1 "GND" H 9455 1577 50  0000 C CNN
+F 2 "" H 9450 1750 50  0001 C CNN
+F 3 "" H 9450 1750 50  0001 C CNN
+	1    9450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1750 9450 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5D12DDB7
+P 7850 2350
+F 0 "#PWR?" H 7850 2100 50  0001 C CNN
+F 1 "GND" H 7855 2177 50  0000 C CNN
+F 2 "" H 7850 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	1    0    0    -1  
+$EndComp
+Text Label 7850 1850 0    50   ~ 0
+FPGA_110
+Text Label 7850 1950 0    50   ~ 0
+FPGA_112
+Text Label 7850 1650 0    50   ~ 0
+FPGA_140
+Wire Wire Line
+	7850 1650 8450 1650
+Wire Wire Line
+	7850 1850 8450 1850
+Wire Wire Line
+	7850 1950 8450 1950
+Text Label 9350 1950 2    50   ~ 0
+FPGA_70
+Text Label 9350 1850 2    50   ~ 0
+FPGA_57
+Wire Wire Line
+	8950 1950 9350 1950
+Wire Wire Line
+	9350 1850 8950 1850
+Wire Wire Line
+	8950 1650 9350 1650
+Text Label 10800 4750 2    50   ~ 0
+SONL_ECHO
+Text Label 5450 3950 0    50   ~ 0
+SONR_ECHO
+Text Label 5450 3750 0    50   ~ 0
+SONL_ECHO
+Text Label 9350 1650 2    50   ~ 0
+FPGA_24B
+Wire Wire Line
+	9600 4750 9650 4750
+$Comp
+L Device:R_US R5
+U 1 1 5CEC0A44
+P 9800 4750
+F 0 "R5" V 9850 4950 50  0000 R CNN
+F 1 "1k" V 9750 4950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 9840 4740 50  0001 C CNN
+F 3 "~" H 9800 4750 50  0001 C CNN
+	1    9800 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9950 4750 10000 4750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D34863C
+P 1850 4550
+F 0 "#PWR?" H 1850 4400 50  0001 C CNN
+F 1 "+3.3V" H 1865 4723 50  0000 C CNN
+F 2 "" H 1850 4550 50  0001 C CNN
+F 3 "" H 1850 4550 50  0001 C CNN
+	1    1850 4550
+	1    0    0    -1  
+$EndComp
+Text Label 2750 1000 2    50   ~ 0
+RPI_3.3V_OUT
+Wire Wire Line
+	2100 1050 2100 1000
+Wire Wire Line
+	2100 1000 2200 1000
+Wire Wire Line
+	2200 1050 2200 1000
+Connection ~ 2200 1000
+Wire Wire Line
+	2200 1000 2750 1000
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5D3A31C2
+P 900 4550
+F 0 "J?" H 1050 4800 50  0000 C CNN
+F 1 "PWR_SEL" V 850 4550 50  0000 C CNN
+F 2 "" H 900 4550 50  0001 C CNN
+F 3 "~" H 900 4550 50  0001 C CNN
+	1    900  4550
+	1    0    0    -1  
+$EndComp
+Text Label 1700 4650 2    50   ~ 0
+RPI_3.3V_OUT
+Text Label 1700 4450 2    50   ~ 0
+FPGA_3.3V_OUT
+Wire Wire Line
+	1100 4450 1700 4450
+Wire Wire Line
+	1100 4650 1700 4650
+Wire Wire Line
+	1100 4550 1850 4550
+Text Notes 1000 5350 0    50   ~ 0
+3.3V Power Select Jumper
+Text Notes -3150 5650 0    50   ~ 0
+Jump the pins to select the source of 3.3V for the sensors. 
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5D41FD53
+P 900 5000
+F 0 "J?" H 1050 5250 50  0000 C CNN
+F 1 "PWR_SEL" V 850 5000 50  0000 C CNN
+F 2 "" H 900 5000 50  0001 C CNN
+F 3 "~" H 900 5000 50  0001 C CNN
+	1    900  5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
