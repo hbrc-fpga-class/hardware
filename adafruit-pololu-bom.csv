@@ -1,0 +1,12 @@
+Qty.,Item Name,URL,Unit Price,Extended Price,Notes
+1,Raspberry Pi 3 Model B+,https://www.adafruit.com/product/3775,$35.00,$35.00,
+1,8 GB SDHC MicroSD Card,https://www.adafruit.com/product/1294,$9.95,$9.95,Could probably get by with 4GB card if available 
+2,Alkaline AA batteries (LR6) - 3 pack,https://www.adafruit.com/product/3521,$2.25,$4.50,Six batteries needed per base
+1," Male/Male Jumper Wires – 20 x 3"" (75mm)",https://www.adafruit.com/product/1956,$1.95,$1.95,Not all 20 are needed but they’re handy to keep around
+1,TinyFPGA BX,https://www.adafruit.com/product/4038,$38.95,$38.95,
+2,HC-SR04 Ultrasonic Sonar Distance Sensor,https://www.adafruit.com/product/3942,$3.95,$7.90,Wayne can likely supply these. Should they be sourced anyway just in case?
+1,Romi Chassis Kit - Blue,https://www.pololu.com/product/3506,$29.95,$29.95,Color isn’t important. Substitute others at your own discretion 
+1,"Romi Encoder Pair Kit, 12 CPR, 3.5-18V",https://www.pololu.com/product/3542,$8.95,$8.95,
+1,Motor Driver and Power Distribution Board for Romi Chassis,https://www.pololu.com/product/3543,$19.95,$19.95,
+2,QTR-MD-01RC Reflectance Sensor,https://www.pololu.com/product/4141,$1.61,$3.22,
+,,,Total:,$160.32,
