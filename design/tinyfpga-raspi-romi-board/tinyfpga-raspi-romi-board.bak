@@ -2336,4 +2336,10 @@ Text Notes 1350 4550 0    50   ~ 0
 User Buttons
 Text Notes -5800 3700 0    50   ~ 0
 User LEDs
+Text Label 5850 3600 2    50   ~ 0
+FPGA_BTN_RST
+Text Label 5850 3750 2    50   ~ 0
+FPGA_BTN0
+Text Label 5850 3900 2    50   ~ 0
+FPGA_BTN1
 $EndSCHEMATC
