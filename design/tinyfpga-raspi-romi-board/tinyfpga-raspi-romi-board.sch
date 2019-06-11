@@ -2554,4 +2554,6 @@ Wire Wire Line
 	7450 2500 7800 2500
 Wire Wire Line
 	7450 1550 8050 1550
+Text Notes 900  -50  0    50   ~ 0
+TODO:\n* Add Mill-Max 0906-1-15-20-75-14-11-0 to break out WP. What's pin 10 for?\n* Change header genders to be consistent (male up / female down)\n* Change jumper to full size not half size
 $EndSCHEMATC
