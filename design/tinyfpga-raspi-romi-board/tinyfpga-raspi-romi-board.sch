@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:tinyfpga-raspi-romi-board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -114,7 +115,7 @@ FPGA_3.3V_OUT
 Wire Wire Line
 	9800 3600 9200 3600
 $Comp
-L custom:OKR-T_3-W12-C A1
+L tinyfpga-raspi-romi-board-rescue:OKR-T_3-W12-C-custom A1
 U 1 1 5CD90422
 P 1950 2150
 F 0 "A1" H 1500 2450 50  0000 L CNN

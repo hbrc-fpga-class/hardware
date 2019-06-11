@@ -664,23 +664,6 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# custom_OKR-T_3-W12-C
-#
-DEF custom_OKR-T_3-W12-C A 0 20 Y Y 1 F N
-F0 "A" -400 300 50 H V C CNN
-F1 "custom_OKR-T_3-W12-C" 400 -300 50 H V C CNN
-F2 "custom:Murata_OKR-T-3_P73" -100 250 50 H I C CNN
-F3 "" -100 250 50 H I C CNN
-DRAW
-S -450 -250 450 250 0 1 0 f
-X ON/~OFF 1 -550 -50 100 R 50 50 1 1 I
-X +VIN 2 -150 350 100 D 50 50 1 1 W
-X +VOUT 2 150 350 100 D 50 50 1 1 w
-X GND 3 0 -350 100 U 50 50 1 1 W
-X TRIM 5 550 -50 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # power_+3.3V
 #
 DEF power_+3.3V #PWR 0 0 Y Y 1 F P
@@ -737,6 +720,23 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# tinyfpga-raspi-romi-board-rescue_OKR-T_3-W12-C-custom
+#
+DEF tinyfpga-raspi-romi-board-rescue_OKR-T_3-W12-C-custom A 0 20 Y Y 1 F N
+F0 "A" -400 300 50 H V C CNN
+F1 "tinyfpga-raspi-romi-board-rescue_OKR-T_3-W12-C-custom" 400 -300 50 H V C CNN
+F2 "custom:Murata_OKR-T-3_P73" -100 250 50 H I C CNN
+F3 "" -100 250 50 H I C CNN
+DRAW
+S -450 -250 450 250 0 1 0 f
+X ON/~OFF 1 -550 -50 100 R 50 50 1 1 I
+X +VIN 2 -150 350 100 D 50 50 1 1 W
+X +VOUT 2 150 350 100 D 50 50 1 1 w
+X GND 3 0 -350 100 U 50 50 1 1 W
+X TRIM 5 550 -50 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
