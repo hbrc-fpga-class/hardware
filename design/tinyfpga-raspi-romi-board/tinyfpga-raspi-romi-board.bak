@@ -2264,15 +2264,15 @@ Wire Notes Line
 Wire Notes Line
 	3100 3550 3100 4500
 $Comp
-L Connector:Conn_01x06_Female J9
+L Connector:Conn_01x06_Male J9
 U 1 1 5CDDF928
 P 3200 4100
-F 0 "J9" H 3200 4550 50  0000 R CNN
-F 1 "ROMI_MOTOR_DRIVE" H 3200 4450 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical_SMD_Pin1Left" H 3200 4100 50  0001 C CNN
+F 0 "J9" H 3400 4550 50  0000 R CNN
+F 1 "ROMI_MOTOR_DRIVE" H 3850 4450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left" H 3200 4100 50  0001 C CNN
 F 3 "~" H 3200 4100 50  0001 C CNN
 	1    3200 4100
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Text Notes 3100 3500 0    50   ~ 0
 Romi Motor I/O
