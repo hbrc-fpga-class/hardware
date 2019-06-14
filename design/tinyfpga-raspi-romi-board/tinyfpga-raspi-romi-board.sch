@@ -786,7 +786,7 @@ U 1 1 5CEAB036
 P 14650 6750
 F 0 "J15" H 14700 7050 50  0000 C CNN
 F 1 "SONAR_RIGHT" V 14700 6700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14650 6750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 14650 6750 50  0001 C CNN
 F 3 "~" H 14650 6750 50  0001 C CNN
 	1    14650 6750
 	-1   0    0    -1  
@@ -847,7 +847,7 @@ U 1 1 5CDE35EF
 P 1050 1850
 F 0 "J7" H 1100 2167 50  0000 C CNN
 F 1 "ROMI_VSW" H 1100 2076 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 1050 1850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 1050 1850 50  0001 C CNN
 F 3 "~" H 1050 1850 50  0001 C CNN
 	1    1050 1850
 	-1   0    0    -1  
