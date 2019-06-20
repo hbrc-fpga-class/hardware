@@ -656,7 +656,7 @@ Text Label 10850 6100 2    50   ~ 0
 ROMI_ENC_RA
 Text Label 10850 5200 2    50   ~ 0
 ROMI_ENC_LB
-Text Label 10850 6200 2    50   ~ 0
+Text Label 10850 6000 2    50   ~ 0
 ROMI_ENC_RB
 Wire Wire Line
 	10250 5900 10850 5900
@@ -1411,7 +1411,7 @@ Wire Wire Line
 	4850 -1150 3800 -1150
 Text Label 3800 -1150 0    50   ~ 0
 FPGA_LED3
-Text Label 10850 6000 2    50   ~ 0
+Text Label 10850 6200 2    50   ~ 0
 FPGA_LED0
 Text Label 10700 3500 2    50   ~ 0
 FPGA_LED4
