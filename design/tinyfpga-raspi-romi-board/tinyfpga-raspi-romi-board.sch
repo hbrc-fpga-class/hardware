@@ -1422,18 +1422,18 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR047
 U 1 1 5D5CDBF2
-P 8650 -1300
-F 0 "#PWR047" H 8650 -1450 50  0001 C CNN
-F 1 "+3.3V" H 8665 -1127 50  0000 C CNN
-F 2 "" H 8650 -1300 50  0001 C CNN
-F 3 "" H 8650 -1300 50  0001 C CNN
-	1    8650 -1300
+P 8550 -1300
+F 0 "#PWR047" H 8550 -1450 50  0001 C CNN
+F 1 "+3.3V" H 8565 -1127 50  0000 C CNN
+F 2 "" H 8550 -1300 50  0001 C CNN
+F 3 "" H 8550 -1300 50  0001 C CNN
+	1    8550 -1300
 	1    0    0    -1  
 $EndComp
 Text Label 9750 -1100 2    50   ~ 0
-FPGA_BTN_RST
+RPI_BTN0
 Wire Wire Line
-	8650 -1300 8750 -1300
+	8550 -1300 8750 -1300
 Wire Wire Line
 	9050 -1300 9150 -1300
 Wire Wire Line
@@ -1557,8 +1557,8 @@ Text Notes 2200 -3200 0    50   ~ 0
 User Buttons
 Text Notes 3600 -3850 0    50   ~ 0
 User LEDs
-Text Label 7950 5400 0    50   ~ 0
-FPGA_BTN_RST
+Text Label 9150 5200 0    50   ~ 0
+FPGA_HBA_INT
 Text Label 10850 5000 2    50   ~ 0
 FPGA_BTN0
 Text Label 10850 5100 2    50   ~ 0
@@ -2153,9 +2153,9 @@ Wire Wire Line
 Wire Wire Line
 	9100 -2450 8600 -2450
 Wire Wire Line
-	12350 -1850 11850 -1850
+	12450 -1850 11850 -1850
 Wire Wire Line
-	12350 -1750 11850 -1750
+	12450 -1750 11850 -1750
 Wire Wire Line
 	12350 -2450 11850 -2450
 Wire Wire Line
@@ -2164,9 +2164,7 @@ Wire Wire Line
 	12350 -3050 11850 -3050
 Wire Wire Line
 	12350 -3150 11850 -3150
-Text Label 12350 -1750 2    50   ~ 0
-RPI_GPIO13
-Text Label 12350 -1850 2    50   ~ 0
+Text Label 12450 -1850 2    50   ~ 0
 RPI_GPIO12
 Text Label 12350 -2450 2    50   ~ 0
 RPI_GPIO7
@@ -2174,22 +2172,14 @@ Text Label 12350 -3050 2    50   ~ 0
 RPI_GPIO3
 Text Label 12350 -3150 2    50   ~ 0
 RPI_GPIO2
-Text Label 12350 -2850 2    50   ~ 0
-RPI_GPIO4
 Wire Wire Line
 	9100 -2950 8600 -2950
 Wire Wire Line
-	9100 -3050 8600 -3050
-Wire Wire Line
 	9100 -3250 8600 -3250
-Wire Wire Line
-	9100 -3150 8600 -3150
 Wire Wire Line
 	9100 -3450 8600 -3450
 Wire Wire Line
 	9100 -3350 8600 -3350
-Text Label 9100 -3050 2    50   ~ 0
-RPI_GPIO13
 Text Label 9100 -2950 2    50   ~ 0
 RPI_GPIO12
 Text Label 9100 -3250 2    50   ~ 0
@@ -2198,8 +2188,6 @@ Text Label 9100 -3450 2    50   ~ 0
 RPI_GPIO3
 Text Label 9100 -3350 2    50   ~ 0
 RPI_GPIO2
-Text Label 9100 -3150 2    50   ~ 0
-RPI_GPIO4
 Wire Notes Line
 	4150 1150 1550 1150
 Wire Notes Line
@@ -2605,5 +2593,53 @@ F 2 "" H 9050 4900 50  0001 C CNN
 F 3 "" H 9050 4900 50  0001 C CNN
 	1    9050 4900
 	-1   0    0    -1  
+$EndComp
+Text Label 12350 -2850 2    50   ~ 0
+RPI_BTN0
+Text Label 12450 -1750 2    50   ~ 0
+FPGA_HBA_INT
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D205B99
+P 1850 6700
+F 0 "H2" H 1950 6746 50  0000 L CNN
+F 1 "MountingHole" H 1950 6655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1850 6700 50  0001 C CNN
+F 3 "~" H 1850 6700 50  0001 C CNN
+	1    1850 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D206F31
+P 1800 7050
+F 0 "H3" H 1900 7096 50  0000 L CNN
+F 1 "MountingHole" H 1900 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1800 7050 50  0001 C CNN
+F 3 "~" H 1800 7050 50  0001 C CNN
+	1    1800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D23E212
+P 1800 7300
+F 0 "H4" H 1900 7346 50  0000 L CNN
+F 1 "MountingHole" H 1900 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1800 7300 50  0001 C CNN
+F 3 "~" H 1800 7300 50  0001 C CNN
+	1    1800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D23E5EE
+P 1900 6300
+F 0 "H1" H 2000 6346 50  0000 L CNN
+F 1 "MountingHole" H 2000 6255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1900 6300 50  0001 C CNN
+F 3 "~" H 1900 6300 50  0001 C CNN
+	1    1900 6300
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
