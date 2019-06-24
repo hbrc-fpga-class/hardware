@@ -2040,11 +2040,9 @@ Text Label 9750 -2250 0    50   ~ 0
 RPI_GPIO23
 Text Label 9750 -2150 0    50   ~ 0
 RPI_GPIO24
-Text Label 9750 -2050 0    50   ~ 0
-RPI_GPIO25
-Text Label 9750 -1950 0    50   ~ 0
+Text Label 12350 -3050 2    50   ~ 0
 ROMI_PG
-Text Label 9750 -1850 0    50   ~ 0
+Text Label 12350 -3150 2    50   ~ 0
 ROMI_SHDN
 Wire Wire Line
 	9750 -2350 10250 -2350
@@ -2053,7 +2051,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 -2150 10250 -2150
 Wire Wire Line
-	10250 -2050 9750 -2050
+	10250 -2050 9650 -2050
 Wire Wire Line
 	9750 -1950 10250 -1950
 Wire Wire Line
@@ -2082,46 +2080,6 @@ Wire Wire Line
 	9750 -2650 10250 -2650
 Wire Wire Line
 	9750 -2550 10250 -2550
-Text Label 9100 -2150 2    50   ~ 0
-RPI_GPIO22
-Text Label 9100 -2250 2    50   ~ 0
-RPI_GPIO23
-Text Label 9100 -1950 2    50   ~ 0
-RPI_GPIO25
-Text Label 9100 -1750 2    50   ~ 0
-RPI_GPIO27
-Wire Wire Line
-	9100 -2150 8600 -2150
-Wire Wire Line
-	8600 -2250 9100 -2250
-Wire Wire Line
-	8600 -1950 9100 -1950
-Wire Wire Line
-	8600 -1750 9100 -1750
-Text Label 9100 -2450 2    50   ~ 0
-RPI_GPIO21
-Text Label 9100 -2350 2    50   ~ 0
-RPI_GPIO20
-Text Label 9100 -2650 2    50   ~ 0
-RPI_GPIO19
-Text Label 9100 -2550 2    50   ~ 0
-RPI_GPIO18
-Text Label 9100 -2850 2    50   ~ 0
-RPI_GPIO17
-Text Label 9100 -2750 2    50   ~ 0
-RPI_GPIO16
-Wire Wire Line
-	9100 -2750 8600 -2750
-Wire Wire Line
-	9100 -2850 8600 -2850
-Wire Wire Line
-	9100 -2550 8600 -2550
-Wire Wire Line
-	9100 -2650 8600 -2650
-Wire Wire Line
-	9100 -2350 8600 -2350
-Wire Wire Line
-	9100 -2450 8600 -2450
 Wire Wire Line
 	12450 -1850 11850 -1850
 Wire Wire Line
@@ -2138,26 +2096,6 @@ Text Label 12450 -1850 2    50   ~ 0
 RPI_GPIO12
 Text Label 12350 -2450 2    50   ~ 0
 RPI_GPIO7
-Text Label 12350 -3050 2    50   ~ 0
-RPI_GPIO3
-Text Label 12350 -3150 2    50   ~ 0
-RPI_GPIO2
-Wire Wire Line
-	9100 -2950 8600 -2950
-Wire Wire Line
-	9100 -3250 8600 -3250
-Wire Wire Line
-	9100 -3450 8600 -3450
-Wire Wire Line
-	9100 -3350 8600 -3350
-Text Label 9100 -2950 2    50   ~ 0
-RPI_GPIO12
-Text Label 9100 -3250 2    50   ~ 0
-RPI_GPIO7
-Text Label 9100 -3450 2    50   ~ 0
-RPI_GPIO3
-Text Label 9100 -3350 2    50   ~ 0
-RPI_GPIO2
 Wire Notes Line
 	4150 1150 1550 1150
 Wire Notes Line
@@ -2429,25 +2367,6 @@ F 3 "" H -2600 3600 50  0001 C CNN
 	1    -2600 3600
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x18_Male J18
-U 1 1 5D0E8841
-P 8400 -2650
-F 0 "J18" H 8508 -1669 50  0000 C CNN
-F 1 "RPI_EXTRA" H 8508 -1760 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 8400 -2650 50  0001 C CNN
-F 3 "~" H 8400 -2650 50  0001 C CNN
-	1    8400 -2650
-	1    0    0    -1  
-$EndComp
-Text Label 9100 -1850 2    50   ~ 0
-RPI_GPIO26
-Text Label 9100 -2050 2    50   ~ 0
-RPI_GPIO24
-Wire Wire Line
-	8600 -1850 9100 -1850
-Wire Wire Line
-	9100 -2050 8600 -2050
 Text Label -3650 3500 0    50   ~ 0
 ROMI_SHDN
 Text Label -3650 3400 0    50   ~ 0
@@ -2562,9 +2481,9 @@ F 3 "" H 9050 4900 50  0001 C CNN
 	1    9050 4900
 	-1   0    0    -1  
 $EndComp
-Text Label 12350 -2850 2    50   ~ 0
-RPI_BTN0
 Text Label 12450 -1750 2    50   ~ 0
+RPI_BTN0
+Text Label 9650 -2050 0    50   ~ 0
 FPGA_HBA_INT
 $Comp
 L Mechanical:MountingHole H2
