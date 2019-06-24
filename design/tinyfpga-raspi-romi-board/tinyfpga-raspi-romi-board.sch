@@ -2124,8 +2124,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 1800 1850 1800
 Wire Wire Line
-	1850 1700 2300 1700
-Wire Wire Line
 	2300 1600 1850 1600
 Wire Wire Line
 	1850 1500 2300 1500
@@ -2491,7 +2489,7 @@ U 1 1 5D205B99
 P 600 7250
 F 0 "H2" H 700 7296 50  0000 L CNN
 F 1 "MountingHole" H 700 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7250 50  0001 C CNN
 F 3 "~" H 600 7250 50  0001 C CNN
 	1    600  7250
 	1    0    0    -1  
@@ -2502,7 +2500,7 @@ U 1 1 5D206F31
 P 600 7450
 F 0 "H3" H 700 7496 50  0000 L CNN
 F 1 "MountingHole" H 700 7405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7450 50  0001 C CNN
 F 3 "~" H 600 7450 50  0001 C CNN
 	1    600  7450
 	1    0    0    -1  
@@ -2513,7 +2511,7 @@ U 1 1 5D23E212
 P 600 7650
 F 0 "H4" H 700 7696 50  0000 L CNN
 F 1 "MountingHole" H 700 7605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7650 50  0001 C CNN
 F 3 "~" H 600 7650 50  0001 C CNN
 	1    600  7650
 	1    0    0    -1  
@@ -2524,7 +2522,7 @@ U 1 1 5D23E5EE
 P 600 7050
 F 0 "H1" H 700 7096 50  0000 L CNN
 F 1 "MountingHole" H 700 7005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7050 50  0001 C CNN
 F 3 "~" H 600 7050 50  0001 C CNN
 	1    600  7050
 	1    0    0    -1  
@@ -2571,4 +2569,54 @@ Wire Wire Line
 	-2100 1700 -2100 1550
 Wire Wire Line
 	-1150 1550 -1050 1550
+$Comp
+L Device:R_US R28
+U 1 1 5D146B5E
+P 2300 2150
+F 0 "R28" H 2232 2104 50  0000 R CNN
+F 1 "3.9k" H 2232 2195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2340 2140 50  0001 C CNN
+F 3 "~" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R29
+U 1 1 5D147C58
+P 2650 2150
+F 0 "R29" H 2582 2104 50  0000 R CNN
+F 1 "3.9k" H 2582 2195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2690 2140 50  0001 C CNN
+F 3 "~" H 2650 2150 50  0001 C CNN
+	1    2650 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 1700 2400 2000
+Wire Wire Line
+	2400 2000 2650 2000
+Wire Wire Line
+	1850 1700 2400 1700
+$Comp
+L power:GND #PWR0104
+U 1 1 5D17CC58
+P 2300 2300
+F 0 "#PWR0104" H 2300 2050 50  0001 C CNN
+F 1 "GND" H 2305 2127 50  0000 C CNN
+F 2 "" H 2300 2300 50  0001 C CNN
+F 3 "" H 2300 2300 50  0001 C CNN
+	1    2300 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D17D014
+P 2650 2300
+F 0 "#PWR0105" H 2650 2050 50  0001 C CNN
+F 1 "GND" H 2655 2127 50  0000 C CNN
+F 2 "" H 2650 2300 50  0001 C CNN
+F 3 "" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
