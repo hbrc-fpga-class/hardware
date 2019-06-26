@@ -26,10 +26,10 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x14_Female J1
+L Connector:Conn_01x14_Female J2
 U 1 1 5CD8C597
 P 9950 5500
-F 0 "J1" H 9900 6250 50  0000 C CNN
+F 0 "J2" H 9900 6250 50  0000 C CNN
 F 1 "TINYFPGA_J1" H 9700 4700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 9950 5500 50  0001 C CNN
 F 3 "~" H 9950 5500 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "~" H 9950 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x14_Female J2
+L Connector:Conn_01x14_Female J1
 U 1 1 5CD8D315
 P 10050 5500
-F 0 "J2" H 10000 6250 50  0000 C CNN
+F 0 "J1" H 10000 6250 50  0000 C CNN
 F 1 "TINYFPGA_J2" H 9800 4700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 10050 5500 50  0001 C CNN
 F 3 "~" H 10050 5500 50  0001 C CNN

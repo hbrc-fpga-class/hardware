@@ -2040,9 +2040,9 @@ Text Label 9750 -2250 0    50   ~ 0
 RPI_GPIO23
 Text Label 9750 -2150 0    50   ~ 0
 RPI_GPIO24
-Text Label 9750 -1950 0    50   ~ 0
+Text Label 12350 -3050 2    50   ~ 0
 ROMI_PG
-Text Label 9750 -1850 0    50   ~ 0
+Text Label 12350 -3150 2    50   ~ 0
 ROMI_SHDN
 Wire Wire Line
 	9750 -2350 10250 -2350
@@ -2096,10 +2096,6 @@ Text Label 12450 -1850 2    50   ~ 0
 RPI_GPIO12
 Text Label 12350 -2450 2    50   ~ 0
 RPI_GPIO7
-Text Label 12350 -3050 2    50   ~ 0
-RPI_GPIO3
-Text Label 12350 -3150 2    50   ~ 0
-RPI_GPIO2
 Wire Notes Line
 	4150 1150 1550 1150
 Wire Notes Line
