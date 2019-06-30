@@ -26,10 +26,10 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x14_Female J1
+L Connector:Conn_01x14_Female J2
 U 1 1 5CD8C597
 P 9950 5500
-F 0 "J1" H 9900 6250 50  0000 C CNN
+F 0 "J2" H 9900 6250 50  0000 C CNN
 F 1 "TINYFPGA_J1" H 9700 4700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 9950 5500 50  0001 C CNN
 F 3 "~" H 9950 5500 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "~" H 9950 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x14_Female J2
+L Connector:Conn_01x14_Female J1
 U 1 1 5CD8D315
 P 10050 5500
-F 0 "J2" H 10000 6250 50  0000 C CNN
+F 0 "J1" H 10000 6250 50  0000 C CNN
 F 1 "TINYFPGA_J2" H 9800 4700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 10050 5500 50  0001 C CNN
 F 3 "~" H 10050 5500 50  0001 C CNN
@@ -2489,7 +2489,7 @@ U 1 1 5D205B99
 P 600 7250
 F 0 "H2" H 700 7296 50  0000 L CNN
 F 1 "MountingHole" H 700 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7250 50  0001 C CNN
 F 3 "~" H 600 7250 50  0001 C CNN
 	1    600  7250
 	1    0    0    -1  
@@ -2500,7 +2500,7 @@ U 1 1 5D206F31
 P 600 7450
 F 0 "H3" H 700 7496 50  0000 L CNN
 F 1 "MountingHole" H 700 7405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7450 50  0001 C CNN
 F 3 "~" H 600 7450 50  0001 C CNN
 	1    600  7450
 	1    0    0    -1  
@@ -2511,7 +2511,7 @@ U 1 1 5D23E212
 P 600 7650
 F 0 "H4" H 700 7696 50  0000 L CNN
 F 1 "MountingHole" H 700 7605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7650 50  0001 C CNN
 F 3 "~" H 600 7650 50  0001 C CNN
 	1    600  7650
 	1    0    0    -1  
@@ -2522,7 +2522,7 @@ U 1 1 5D23E5EE
 P 600 7050
 F 0 "H1" H 700 7096 50  0000 L CNN
 F 1 "MountingHole" H 700 7005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 600 7050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 600 7050 50  0001 C CNN
 F 3 "~" H 600 7050 50  0001 C CNN
 	1    600  7050
 	1    0    0    -1  
