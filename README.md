@@ -16,3 +16,6 @@ These are the KiCad design files for the PCB. It's designed as follows:
   * 3x VSW / 3x GND
 * The custom board should have female headers installed which mate with the male headers on the PDB/MC board
 * The raspberry pi and tinyfpga plug into the custom board
+
+## build
+BOM files and stuff
