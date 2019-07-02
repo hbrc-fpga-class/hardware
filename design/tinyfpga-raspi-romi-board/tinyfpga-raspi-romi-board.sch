@@ -15,22 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Raspberry_Pi_2_3 J3
-U 1 1 5CCFE93E
-P 5600 2050
-F 0 "J3" H 4950 3300 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 6300 800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H 5600 2050 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5600 2050 50  0001 C CNN
-	1    5600 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x14_Female J2
 U 1 1 5CD8C597
 P 9950 5500
 F 0 "J2" H 9900 6250 50  0000 C CNN
-F 1 "TINYFPGA_J1" H 9700 4700 50  0000 C CNN
+F 1 "PinSocket_1x14_P2.54mm_Vertical" H 9450 4700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 9950 5500 50  0001 C CNN
 F 3 "~" H 9950 5500 50  0001 C CNN
 	1    9950 5500
@@ -41,7 +30,7 @@ L Connector:Conn_01x14_Female J1
 U 1 1 5CD8D315
 P 10050 5500
 F 0 "J1" H 10000 6250 50  0000 C CNN
-F 1 "TINYFPGA_J2" H 9800 4700 50  0000 C CNN
+F 1 "PinSocket_1x14_P2.54mm_Vertical" H 9550 4700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 10050 5500 50  0001 C CNN
 F 3 "~" H 10050 5500 50  0001 C CNN
 	1    10050 5500
@@ -52,7 +41,7 @@ L Connector_Generic:Conn_02x08_Odd_Even J4
 U 1 1 5CD8E0A4
 P 10000 3800
 F 0 "J4" H 10050 4317 50  0000 C CNN
-F 1 "TINYFPGA_J4" H 10050 4226 50  0000 C CNN
+F 1 "PinSocket_2x08_P2.54mm_Vertical" H 10050 4226 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 10000 3800 50  0001 C CNN
 F 3 "~" H 10000 3800 50  0001 C CNN
 	1    10000 3800
@@ -63,7 +52,7 @@ L Connector_Generic:Conn_02x03_Odd_Even J5
 U 1 1 5CD90328
 P 10000 2850
 F 0 "J5" H 10050 3167 50  0000 C CNN
-F 1 "TINYFPGA_J5" H 10050 3076 50  0000 C CNN
+F 1 "PinSocket_2x03_P2.54mm_Vertical" H 10050 3076 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 10000 2850 50  0001 C CNN
 F 3 "~" H 10000 2850 50  0001 C CNN
 	1    10000 2850
@@ -310,7 +299,7 @@ L Connector:Conn_01x02_Male J8
 U 1 1 5CDF3B4A
 P 5700 4450
 F 0 "J8" V 5700 4500 50  0000 L CNN
-F 1 "FUSE_JUMP" V 5800 4500 50  0000 L CNN
+F 1 "PinHeader_1x02_P2.54mm_Vertical" V 5800 4500 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5700 4450 50  0001 C CNN
 F 3 "~" H 5700 4450 50  0001 C CNN
 	1    5700 4450
@@ -387,7 +376,7 @@ L Connector:Conn_01x02_Male J6
 U 1 1 5CD9A9C4
 P 2050 5050
 F 0 "J6" H 1950 5050 50  0000 L CNN
-F 1 "WP_JUMP" H 1700 4950 50  0000 L CNN
+F 1 "PinHeader_1x02_P2.54mm_Vertical" H 1700 4950 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5050 50  0001 C CNN
 F 3 "~" H 2050 5050 50  0001 C CNN
 	1    2050 5050
@@ -710,7 +699,7 @@ L Connector:Conn_01x04_Female J14
 U 1 1 5CE95A60
 P 7450 4700
 F 0 "J14" H 7500 5000 50  0000 C CNN
-F 1 "SONAR_LEFT" V 7500 4650 50  0000 C CNN
+F 1 "PinSocket_1x04_P2.54mm_Vertical" H 7200 4900 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7450 4700 50  0001 C CNN
 F 3 "~" H 7450 4700 50  0001 C CNN
 	1    7450 4700
@@ -727,7 +716,7 @@ L Connector:Conn_01x04_Female J15
 U 1 1 5CEAB036
 P 7450 5700
 F 0 "J15" H 7500 6000 50  0000 C CNN
-F 1 "SONAR_RIGHT" V 7500 5650 50  0000 C CNN
+F 1 "PinSocket_1x04_P2.54mm_Vertical" H 7200 5900 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7450 5700 50  0001 C CNN
 F 3 "~" H 7450 5700 50  0001 C CNN
 	1    7450 5700
@@ -945,8 +934,8 @@ $Comp
 L Connector:Conn_01x03_Male J16
 U 1 1 5D3A31C2
 P 10050 1300
-F 0 "J16" H 10200 1550 50  0000 C CNN
-F 1 "PWR_SEL1" V 10000 1300 50  0000 C CNN
+F 0 "J16" H 10150 1650 50  0000 C CNN
+F 1 "PinHeader_1x03_P2.54mm_Vertical" H 10350 1550 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10050 1300 50  0001 C CNN
 F 3 "~" H 10050 1300 50  0001 C CNN
 	1    10050 1300
@@ -968,8 +957,8 @@ $Comp
 L Connector:Conn_01x03_Male J17
 U 1 1 5D41FD53
 P 10050 1750
-F 0 "J17" H 10200 2000 50  0000 C CNN
-F 1 "PWR_SEL0" V 10000 1750 50  0000 C CNN
+F 0 "J17" H 10100 1550 50  0000 C CNN
+F 1 "PinHeader_1x03_P2.54mm_Vertical" H 10150 1400 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10050 1750 50  0001 C CNN
 F 3 "~" H 10050 1750 50  0001 C CNN
 	1    10050 1750
@@ -2052,10 +2041,6 @@ Wire Wire Line
 	4300 2450 4800 2450
 Wire Wire Line
 	4800 2550 4200 2550
-Wire Wire Line
-	4300 2650 4800 2650
-Wire Wire Line
-	4800 2750 4300 2750
 Text Label 4300 2050 0    50   ~ 0
 RPI_GPIO21
 Text Label 4300 1950 0    50   ~ 0
@@ -2109,7 +2094,7 @@ L Connector:Conn_01x06_Male J9
 U 1 1 5CDDF928
 P 2800 6950
 F 0 "J9" H 3000 7400 50  0000 R CNN
-F 1 "ROMI_MOTOR_DRIVE" H 3450 7300 50  0000 R CNN
+F 1 "PinHeader_1x06_P2.54mm_Vertical" H 3450 7300 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2800 6950 50  0001 C CNN
 F 3 "~" H 2800 6950 50  0001 C CNN
 	1    2800 6950
@@ -2178,7 +2163,7 @@ L Connector:Conn_01x03_Female J11
 U 1 1 5CDAB5A4
 P 4450 6850
 F 0 "J11" H 4450 7200 50  0000 R CNN
-F 1 "ROMI_ENC_RIGHT" H 4450 7100 50  0000 R CNN
+F 1 "PinSocket_1x03_P2.54mm_Vertical" H 4450 7100 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4450 6850 50  0001 C CNN
 F 3 "~" H 4450 6850 50  0001 C CNN
 	1    4450 6850
@@ -2197,7 +2182,7 @@ L Connector:Conn_01x03_Female J10
 U 1 1 5CDA7574
 P 3600 6850
 F 0 "J10" H 3600 7200 50  0000 R CNN
-F 1 "ROMI_ENC_LEFT" H 3600 7100 50  0000 R CNN
+F 1 "PinSocket_1x03_P2.54mm_Vertical" H 3600 7100 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3600 6850 50  0001 C CNN
 F 3 "~" H 3600 6850 50  0001 C CNN
 	1    3600 6850
@@ -2243,7 +2228,7 @@ L Connector_Generic:Conn_02x02_Odd_Even J13
 U 1 1 5D3D68C5
 P 7800 1950
 F 0 "J13" H 7850 1625 50  0000 C CNN
-F 1 "QTR_RIGHT" H 7850 1716 50  0000 C CNN
+F 1 "PinSocket_2x02_P2.54mm_Vertical" H 7850 1716 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 7800 1950 50  0001 C CNN
 F 3 "~" H 7800 1950 50  0001 C CNN
 	1    7800 1950
@@ -2284,7 +2269,7 @@ L Connector_Generic:Conn_02x02_Odd_Even J12
 U 1 1 5D72C20C
 P 7800 1350
 F 0 "J12" H 7850 1025 50  0000 C CNN
-F 1 "QTR_LEFT" H 7850 1116 50  0000 C CNN
+F 1 "PinSocket_2x02_P2.54mm_Vertical" H 7850 1116 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 7800 1350 50  0001 C CNN
 F 3 "~" H 7800 1350 50  0001 C CNN
 	1    7800 1350
@@ -2295,7 +2280,7 @@ L Connector:Conn_01x02_Male J19
 U 1 1 5D8FC92D
 P 4150 5400
 F 0 "J19" H 4000 5350 50  0000 L CNN
-F 1 "ON_OFF" H 3850 5250 50  0000 L CNN
+F 1 "PinHeader_1x02_P2.54mm_Vertical" H 3850 5250 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 5400 50  0001 C CNN
 F 3 "~" H 4150 5400 50  0001 C CNN
 	1    4150 5400
@@ -2310,7 +2295,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J20
 U 1 1 5D017A69
 P 8050 2850
 F 0 "J20" H 8100 3267 50  0000 C CNN
-F 1 "ROMI_POWER" H 8100 3176 50  0000 C CNN
+F 1 "PinHeader_2x05_P2.54mm_Vertical" H 8100 3176 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8050 2850 50  0001 C CNN
 F 3 "~" H 8050 2850 50  0001 C CNN
 	1    8050 2850
@@ -2378,7 +2363,7 @@ L Connector_Generic:Conn_02x08_Odd_Even J7
 U 1 1 5D28E5CD
 P 3600 5250
 F 0 "J7" H 3650 5767 50  0000 C CNN
-F 1 "ROMI_VSW" H 3650 5676 50  0000 C CNN
+F 1 "PinHeader_2x08_P2.54mm_Vertical" H 3650 5676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 3600 5250 50  0001 C CNN
 F 3 "~" H 3600 5250 50  0001 C CNN
 	1    3600 5250
@@ -2570,53 +2555,18 @@ Wire Wire Line
 Wire Wire Line
 	6050 4850 6150 4850
 $Comp
-L Device:R_US R28
-U 1 1 5D146B5E
-P 3450 7400
-F 0 "R28" H 3382 7354 50  0000 R CNN
-F 1 "3.9k" H 3382 7445 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3490 7390 50  0001 C CNN
-F 3 "~" H 3450 7400 50  0001 C CNN
-	1    3450 7400
-	-1   0    0    1   
+L Connector:Raspberry_Pi_2_3 J3
+U 1 1 5CCFE93E
+P 5600 2050
+F 0 "J3" H 4950 3300 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 6300 800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H 5600 2050 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5600 2050 50  0001 C CNN
+	1    5600 2050
+	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R29
-U 1 1 5D147C58
-P 3800 7400
-F 0 "R29" H 3732 7354 50  0000 R CNN
-F 1 "3.9k" H 3732 7445 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3840 7390 50  0001 C CNN
-F 3 "~" H 3800 7400 50  0001 C CNN
-	1    3800 7400
-	-1   0    0    1   
-$EndComp
+NoConn ~ 4800 2650
+NoConn ~ 4800 2750
 Wire Wire Line
-	3550 6950 3550 7250
-Wire Wire Line
-	3550 7250 3800 7250
-Wire Wire Line
-	3000 6950 3550 6950
-$Comp
-L power:GND #PWR0104
-U 1 1 5D17CC58
-P 3450 7550
-F 0 "#PWR0104" H 3450 7300 50  0001 C CNN
-F 1 "GND" H 3455 7377 50  0000 C CNN
-F 2 "" H 3450 7550 50  0001 C CNN
-F 3 "" H 3450 7550 50  0001 C CNN
-	1    3450 7550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5D17D014
-P 3800 7550
-F 0 "#PWR0105" H 3800 7300 50  0001 C CNN
-F 1 "GND" H 3805 7377 50  0000 C CNN
-F 2 "" H 3800 7550 50  0001 C CNN
-F 3 "" H 3800 7550 50  0001 C CNN
-	1    3800 7550
-	-1   0    0    -1  
-$EndComp
+	3000 6950 3450 6950
 $EndSCHEMATC
