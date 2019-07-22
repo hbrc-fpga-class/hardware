@@ -10,3 +10,6 @@
 * Pull-downs on PWM signals are missing
 * TX and RX is switched
 * The male 1x14 pins I bought are too long and needed to be trimmed.
+* Pull-down needed on romi shutdown pin
+* Real-time clock for Raspberry Pi
+* EEPROM should always be powered from Raspberry Pi 3.3V
