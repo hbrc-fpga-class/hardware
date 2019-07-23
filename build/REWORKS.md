@@ -13,3 +13,5 @@
 * ~Pull-down needed on romi shutdown pin~ Cut trace on shutdown pin to disable feature
 * Real-time clock for Raspberry Pi
 * EEPROM should always be powered from Raspberry Pi 3.3V
+* In order to prevent undervolting the Pi, consider changing the 5V regulator's TRIM resistor to 255 ohm (1%)
+* Add more bulk capacitance to prevent high internal resistance of Alkaline batteries from allowing VBAT 
