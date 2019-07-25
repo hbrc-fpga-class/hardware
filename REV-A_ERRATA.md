@@ -15,3 +15,4 @@
 * EEPROM should always be powered from Raspberry Pi 3.3V
 * In order to prevent undervolting the Pi, consider changing the 5V regulator's TRIM resistor to 255 ohm (1%)
 * Add more bulk capacitance to prevent high internal resistance of Alkaline batteries from allowing VBAT 
+* Button (force AP mode), shutdown button for pi, and LEDs (know if connected to wifi) specifically for PiFi
