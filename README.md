@@ -1,8 +1,8 @@
-# Hardware
+# Homebrew Automation Hardware
 
-This repository contains the designs for any physical hardware -- most notably the custom adapter board that sits on the Romi platform connecting the Romi, Raspberry Pi, and TinyFPGA BX, and sensors together.
+This repository contains the designs for any physical hardware for the Homebrew Automation PCB.
 
-## pcb/tinyfpga-raspi-romi-board
+# tinyfpga-raspi-romi-board
 These are the KiCad design files for the PCB. It's designed as follows:
 
 * The Romi chassis needs to have the combined power distribution board and motor controller
@@ -17,5 +17,3 @@ These are the KiCad design files for the PCB. It's designed as follows:
 * The custom board should have female headers installed which mate with the male headers on the PDB/MC board
 * The raspberry pi and tinyfpga plug into the custom board
 
-## build
-BOM files and stuff

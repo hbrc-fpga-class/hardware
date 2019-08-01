@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name tinyfpga-raspi-romi-board-rescue)(type Legacy)(uri ${KIPRJMOD}/tinyfpga-raspi-romi-board-rescue.lib)(options "")(descr ""))
-)
